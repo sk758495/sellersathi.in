@@ -1,0 +1,225 @@
+/* General Styles */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: transparent;
+    box-shadow: none;
+}
+
+.navbar-brand .logo {
+    width: 50px;
+    height: auto;
+}
+
+.nav-link {
+    color: black;
+    margin-right: 20px;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.review-title {
+    text-align: center;
+    margin: 0px;
+    font-weight: 800;
+    font-size: 58px;
+    color: rgb(0, 191, 255);
+    text-shadow: 2px 12px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    /* Text shadow effect */
+}
+
+.typing {
+    display: inline;
+    /* Inline for wrapping */
+    border-right: 2px solid white;
+    /* Cursor effect */
+    animation: blink-caret 0.75s step-end infinite;
+    /* Cursor blink */
+    white-space: pre-wrap;
+    /* Allow text to wrap */
+    color: white;
+}
+
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+        /* Blink effect */
+    }
+}
+
+
+/*   <!-- Reviews Css --> */
+
+.review-section {
+    padding: 50px 20px;
+}
+
+.heading p {
+    font-size: 18px;
+    color: #333;
+}
+
+.heading h2 {
+    font-size: 36px;
+    margin: 10px 0 30px;
+    color: #222;
+    font-weight: 700;
+}
+
+.reviews-container {
+    flex-wrap: wrap;
+}
+
+.review-card-1 {
+    background-color: black;
+    /* Card background */
+    color: white;
+    /* Text color */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    /* Set a max width for better layout */
+    margin: 20px auto;
+    /* Center the card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-card-1:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.review-card {
+    background-color: white;
+    border: 3px solid #009879;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.review-card:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.review-card h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.review-card p {
+    font-size: 16px;
+    /* Keep the font size */
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 0px;
+    /*min-height: 60px;
+    /* Set a minimum height to ensure all paragraphs are the same size */
+}
+
+.pp-card {
+    background-color: white;
+    border: 3px solid #009879;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.pp-card:hover {
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.pp-card h2 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.pp-card p {
+    font-size: 16px;
+    /* Keep the font size */
+    color: #000000;
+    line-height: 1.6;
+    margin: 20px;
+    text-align: center;
+    /*min-height: 60px;
+    /* Set a minimum height to ensure all paragraphs are the same size */
+}
+
+.review-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #009879;
+    margin-top: 20px;
+    /* Push the name down to align at the bottom */
+}
+
+.custom-bullets {
+    list-style-type: disc;
+    /* Default bullet style */
+    margin-left: 20px;
+    /* Space from the left */
+    padding-left: 0;
+    /* Remove padding */
+}
+
+.custom-bullets li {
+    margin-bottom: 10px;
+    /* Space between list items */
+}
+
+
+/* Change bullet color */
+
+.custom-bullets li::marker {
+    color: #007bff;
+    /* Change bullet color */
+    font-size: 1.2em;
+    /* Change bullet size */
+}
+
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-card {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+footer a {
+    text-decoration: none;
+    color: #ff5722;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: none;
+    /* Change to your desired hover color */
+    transform: scale(1.1);
+    /* Slightly enlarges the link */
+    text-shadow: 0 0 5px lightskyblue;
+}

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller Sathi</title>
+    <link rel="icon" href="images/LOGO-sellersathi.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="website_developer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- Updated Navbar with Links -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="box-shadow: 0 0 10px black">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/LOGO-sellersathi.png" alt="Logo" class="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" role="tab" aria-controls="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html" role="tab" aria-controls="nav-profile">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html" role="tab" aria-controls="nav-services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html" role="tab" aria-controls="nav-reviews" disabled>Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.php" role="tab" aria-controls="nav-contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Career.php" role="tab" aria-controls="nav-contact">Career</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Get the current page URL
+        const currentPage = window.location.pathname.split("/").pop();
+
+        // Get all nav links
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        // Loop through links and set active class based on the current page
+        navLinks.forEach((link) => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    </script>
+
+    <!-- Navbar End -->
+
+
+    <div class="text-center">
+        <img src="images/website_developer-banner.jpg" class="img-fluid" id="image-x" alt="Career Opportunities" />
+    </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+
+        <div class="container" style="margin-top: 20px;">
+            <div class="row heading">
+                <div class="col-md-7">
+                    <h2 class="top-sale">SELLER SATHI</h2>
+                    <p style=" font-size: 20px;
+                    margin: 10px 0 30px;
+                    color: #222;
+                    font-weight: 700;">Web Design and Development
+                    </p>
+
+                    <p class="">We offer excellent web design services at comparatively lower rates for local and global customers.</p>
+
+                    <div class="buttons">
+                        <a href="contact_us.php" class="btn btn-pink">Book Now</a>
+                        <a href="about_us.html" class="btn btn-blue">Know
+                                More</a>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <ul class="list-unstyled mt-3 ">
+                        <li>
+                            <span class="check-mark text-success ">✔</span> Affordable Pricing
+                        </li>
+                        <li>
+                            <span class="check-mark text-success ">✔</span> Mobile Responsive
+                        </li>
+                        <li>
+                            <span class="check-mark text-success ">✔</span> Satisfaction guaranteed!
+                        </li>
+                        <li><span class="check-mark text-success ">✔</span>Responsive Website Design - Fits on any device
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!--- Confidence section  -->
+    <section class="section-padding">
+        <div class="content-container text-center">
+            <img src="images/w-2.jpg" alt="Man showing OK sign" class="responsive-image" />
+            <div class="div-t">
+                <p class="description-text ">
+                    At Seller Sathi, we specialize in creating fully customized websites tailored to meet your unique needs. Our team is dedicated to delivering high-quality, mobile-responsive designs that not only look stunning but also provide an exceptional user experience.
+                    We pride ourselves on our innovative and creative approach, ensuring that each project is infused with fresh ideas and modern aesthetics. Whether you need a sleek portfolio site, a robust e-commerce platform, or any other web solution,
+                    we bring your vision to life with cutting-edge technologies and best practices.
+                </p>
+                <ul class="list-unstyled mt-3">
+                    <li>
+                        <span class="check-mark text-success">✔</span>
+                        <span style="font-weight: 600; color: green;">Custom Web Development:</span> Building websites from the ground up, designed specifically for your goals.
+                    </li>
+                    <li>
+                        <span class="check-mark text-success">✔</span>
+                        <span style="font-weight: 600; color: green;">Mobile Responsiveness:</span> Ensuring your site looks great and functions seamlessly on all devices.
+                    </li>
+                    <li>
+                        <span class="check-mark text-success">✔</span>
+                        <span style="font-weight: 600; color: green;">Creative Design Solutions:</span> Crafting visually appealing designs that engage your audience.
+                    </li>
+                    <li>
+                        <span class="check-mark text-success">✔</span>
+                        <span style="font-weight: 600; color: green;">Ongoing Support:</span> Providing maintenance and support to keep your site running smoothly.
+                    </li>
+                </ul>
+                <a href="about_us.html">
+                    <button class="btn btn-success" id="confidence-btn">Learn more about us</button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!---WHO WE ARE-->
+    <section class="py-5 bg-light ">
+        <div class="container ">
+            <div class="row align-items-center ">
+                <div class="col-md-6 mb-4 ">
+                    <h2 style="font-size: 1.2rem; font-weight: 600; color: purple ">
+                        SELLER SATHI
+                    </h2>
+                    <h1 style="font-weight: 800 ">WHO WE ARE</h1>
+                    <p>
+                        Seller Sathi is the best E-commerce product cataloging and listing service company in Delhi, Mumbai, and across India helping sellers to sell products online on various marketplaces. Our specialized team of E-commerce cataloging services will help you
+                        to grow online sales.
+                    </p>
+                </div>
+                <div class="col-md-6 text-center ">
+                    <img src="images/LOGO-sellersathi.png " alt="Company Logo " class="mb-3 " style="max-height: 100px ;" />
+                    <div class="row ">
+                        <div class="col-12 mb-3 ">
+                            <div class="border p-3 ">
+                                <i class="fas fa-check-circle text-success "></i>
+                                <span>
+                                        By managing your E-commerce product
+                                        listings, image editing,
+                                        and product content writing.</span>
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="border p-3 ">
+                                <i class="fas fa-check-circle text-success "></i>
+                                <span>
+                                        We are an official Seller partner of
+                                        Flipkart, Amazon,
+                                        Myntra, Snapdeal, and Ajio.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+
+    <footer class="bg-dark text-light py-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-3 tex3-center mb-4 ">
+                    <img src="images/LOGO-sellersathi.png " alt="Company Logo " class="mb-3 " style="max-height: 80px " />
+                    <div>
+                        <a href="https://www.facebook.com/dhanji.bharwad.3/ " class="text-light mx-2 "><i
+                                    class="fab fa-facebook-f "></i></a>
+                        <a href="https://www.instagram.com/seller_sathi_vadodara " class="text-light mx-2 "><i
+                                    class="fab fa-instagram "></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 ">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="service.html " class="text-light ">Services</a></li>
+                        <li><a href="reviews.html " class="text-light ">Reviews</a></li>
+                        <li><a href="about_us.html " class="text-light ">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3 ">
+                    <h5><a href="faq.html">FAQs</a></h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="term-condition.html" class="text-light ">Terms and
+                                    Conditions</a></li>
+                        <li><a href="privacy_policy.html " class="text-light ">Privacy
+                                    Policy</a></li>
+                        <li>
+                            <a href="contact_us.php " class="text-light ">Contact Us</a>
+                        </li>
+                        <li><a href="tel:9624402490 " class="text-light ">Call
+                                    Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3 ">
+                    <h5>Our Locations</h5>
+                    <p>
+                        <strong>Head Office:</strong><br />AMR Tech Park II, No.25 & 26, Hongasandra, Hosur Main Road, Bangalore – 560 068, India.
+                    </p>
+                    <p>
+                        <strong>Regional Head Office:</strong><br /> C 507-509 Time Sqaure, Harshadrai Mehta Marg, Fatehgunj, Vadodara – Gujarat. <br />
+                        <br />B – 403 Speranza Nr.TGB Circal, LP Savani Road Pal, Surat
+                    </p>
+                    <p>
+                        <strong>Our Branches:</strong><br />Bengaluru,Surat, Delhi, Mumbai, Hyderabad, Kochi, Chandigarh, Chennai.
+                    </p>
+                    <p>
+                        <strong>Upcoming Branches:</strong><br />Rajkot, Raipur, Jaipur, Indore.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-4 ">
+                <small>&copy; 2024 SellerSathi.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function animateCount(elementId, targetCount) {
+            let count = 0;
+            const increment = Math.ceil(targetCount / 100);
+
+            const updateCount = () => {
+                count += increment;
+                if (count > targetCount) {
+                    count = targetCount;
+                }
+                document.getElementById(elementId).innerText = count;
+
+                if (count < targetCount) {
+                    requestAnimationFrame(updateCount);
+                }
+            };
+
+            requestAnimationFrame(updateCount);
+        }
+
+        animateCount("sellersCount ", 7000);
+        animateCount("ordersCount ", 7000);
+        animateCount("revenueCount ", 350);
+        animateCount("brand ", 250);
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js " integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js " integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy " crossorigin="anonymous "></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+/* General Styles */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: transparent;
+    box-shadow: none;
+}
+
+.navbar-brand .logo {
+    width: 50px;
+    height: auto;
+}
+
+.nav-link {
+    color: black;
+    margin-right: 20px;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.review-title {
+    text-align: center;
+    margin: 0px;
+    font-weight: 800;
+    font-size: 58px;
+    color: rgb(0, 191, 255);
+    text-shadow: 2px 12px 4px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    /* Text shadow effect */
+}
+
+.accordion .card {
+    background-color: #f8f9fa;
+    /* Change to your desired background color */
+    border: 1px solid #ced4da;
+    /* Border color */
+    margin-bottom: 1rem;
+    /* Space between cards */
+}
+
+.accordion .card-header {
+    background-color: #e9ecef;
+    /* Header background color */
+}
+
+.accordion .btn-link {
+    text-decoration: none;
+    /* Remove underline */
+    color: #007bff;
+    /* Button text color */
+    width: 100%;
+    /* Make button full width */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.accordion .btn-link:hover {
+    color: #0056b3;
+    /* Button text color on hover */
+}
+
+.card-body {
+    text-align: left;
+    /* Align answer text to the left */
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 576px) {
+    .accordion .card {
+        width: 100%;
+        /* Full width on mobile */
+    }
+}
+
+footer a {
+    text-decoration: none;
+    color: #ff5722;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: none;
+    /* Change to your desired hover color */
+    transform: scale(1.1);
+    /* Slightly enlarges the link */
+    text-shadow: 0 0 5px lightskyblue;
+}

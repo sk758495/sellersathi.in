@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller Sathi</title>
+    <link rel="icon" href="images/LOGO-sellersathi.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="term-condition.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- Updated Navbar with Links -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="box-shadow: 0 0 10px black">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/LOGO-sellersathi.png" alt="Logo" class="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" role="tab" aria-controls="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html" role="tab" aria-controls="nav-profile">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html" role="tab" aria-controls="nav-services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html" role="tab" aria-controls="nav-reviews" disabled>Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.php" role="tab" aria-controls="nav-contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Career.php" role="tab" aria-controls="nav-contact">Career</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Get the current page URL
+        const currentPage = window.location.pathname.split("/").pop();
+
+        // Get all nav links
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        // Loop through links and set active class based on the current page
+        navLinks.forEach((link) => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    </script>
+
+    <!-- Navbar End -->
+
+    <!-- Review section -->
+
+    <section class="review-section">
+        <h1 class="review-title">Terms & Conditions</h1>
+
+        <div class="container" style="margin-top: 30px;">
+            <div class="row reviews-container">
+
+                <div class="col-lg-12 col-md-12 col-sm-12 review-card">
+                    <h2>Terms and Conditions for Seller Services</h2>
+
+                    <h4>1. Introduction</h4>
+                    <p>These Terms and Conditions (“Terms”) govern the use of the services provided by Seller sathi, we to sellers for managing products across multiple marketplaces. By accessing or using our services, you agree to be bound by these Terms.
+                    </p>
+
+                    <h4>2. Services</h4>
+                    <div class="container my-4">
+                        <h6>Advantages of Managing eCommerce</h6>
+                        <ul class="custom-bullets">
+                            <li>Create and optimize product listings for various marketplaces.</li>
+                            <li>Manage inventory levels across all connected marketplaces.</li>
+                            <li>Fulfill orders received from different marketplaces.</li>
+                            <li>Low operational costs.</li>
+                            <li>Access data and insights on your sales performance.</li>
+                        </ul>
+                    </div>
+
+                    <h4>3. Your Responsibilities</h4>
+                    <div class="container my-4">
+                        <ul class="custom-bullets">
+                            <li>You are responsible for complying with all applicable laws and regulations related to the sale of your products on marketplaces.</li>
+                            <li>You are responsible for the accuracy of all information you provide about your products and business.</li>
+                            <li>You agree to use our services in a professional and ethical manner.</li>
+                            <li>You are responsible for the security of your account credentials.</li>
+                        </ul>
+                    </div>
+
+                    <h4>4. Fees and Payment</h4>
+                    <p>We offer tiered pricing plans based on your business needs. You can find more information about our pricing on our website or by contacting us. Payment terms are specified in your chosen plan and may include prepayment or monthly invoicing.</p>
+
+                    <h4>5. Term and Termination</h4>
+                    <p>These Terms will remain in effect until terminated by either party. We may terminate these Terms at any time for any reason, with or without notice. You may terminate these Terms by discontinuing use of our services.</p>
+
+                    <h4>6. Intellectual Property</h4>
+                    <p>We own all intellectual property rights associated with our platform and services. You are granted a non-exclusive, non-transferable license to use our platform and services solely for the purpose of managing your products across multiple
+                        marketplaces.
+                    </p>
+
+                    <h4>7. Disclaimer of Warranties</h4>
+                    <p>Our services are provided “as is” and without warranties of any kind, express or implied. We disclaim all warranties, including but not limited to warranties of merchantability, fitness for a particular purpose, and non-infringement.
+                    </p>
+
+                    <h4>8. Limitation of Liability</h4>
+                    <p>We will not be liable for any damages arising from your use of our services, including but not limited to direct, indirect, incidental, consequential, or punitive damages.
+                    </p>
+
+                    <h4>9. Indemnification</h4>
+                    <p>You agree to indemnify and hold us harmless from any claims, losses, damages, liabilities, costs, and expenses (including attorney’s fees) arising from or related to your use of our services or your violation of these Terms.
+                    </p>
+
+                    <h4>10. Confidentiality</h4>
+                    <p>You agree to keep confidential all non-public information you obtain about us or our services.
+                    </p>
+
+                    <h4>11. Force Majeure</h4>
+                    <p>We will not be liable for any delay or failure to perform our obligations under these Terms due to causes beyond our reasonable control, such as acts of God, war, terrorism, strikes, or natural disasters.
+                    </p>
+
+                    <h4>12. Governing Law and Dispute Resolution</h4>
+                    <p>These Terms will be governed by and construed in accordance with the laws of [State], without regard to its conflict of law principles. Any dispute arising from or relating to these Terms will be subject to the exclusive jurisdiction
+                        of the courts located in INDIA.
+                    </p>
+
+
+                    <h4>13. Entire Agreement</h4>
+                    <p>These Terms constitute the entire agreement between you and us regarding the subject matter hereof and supersede all prior or contemporaneous communications, representations, or agreements, whether oral or written.
+                    </p>
+
+                    <h4>14. Amendment</h4>
+                    <p>We may amend these Terms at any time by posting the amended terms on our website. You are responsible for periodically reviewing the Terms. Your continued use of our services after the amended terms are posted will constitute your
+                        acceptance of the amended terms.
+                    </p>
+
+                    <h4>15. Severability</h4>
+                    <p>If any provision of these Terms is held to be invalid or unenforceable, such provision shall be struck and the remaining provisions shall remain in full force and effect.
+                    </p>
+
+                    <h4>16. Waiver</h4>
+                    <p>No waiver of any provision of these Terms will be deemed a further or continuing waiver of such provision or any other provision.
+                    </p>
+
+
+                    <h4>17. Contact Us </h4>
+                    <p>If you have any questions about these Terms, please contact us at <a href="mailto:your-email@example.com">info@sellersathi.in</a>
+                    </p>
+
+                </div>
+                <!-- Repeat for more reviews -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews section End -->
+
+    <!-- Footer section -->
+
+    <footer class="bg-dark text-light py-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-3 tex3-center mb-4 ">
+                    <img src="images/LOGO-sellersathi.png " alt="Company Logo " class="mb-3 " style="max-height: 80px " />
+                    <div>
+                        <a href="https://www.facebook.com/dhanji.bharwad.3/ " class="text-light mx-2 "><i
+                                  class="fab fa-facebook-f "></i></a>
+                        <a href="https://www.instagram.com/seller_sathi_vadodara " class="text-light mx-2 "><i
+                                  class="fab fa-instagram "></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 ">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="service.html " class="text-light ">Services</a></li>
+                        <li><a href="reviews.html " class="text-light ">Reviews</a></li>
+                        <li><a href="about_us.html " class="text-light ">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3 ">
+                    <h5><a href="faq.html">FAQs</a></h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="term-condition.html" class="text-light ">Terms and
+                                  Conditions</a></li>
+                        <li><a href="privacy_policy.html " class="text-light ">Privacy
+                                  Policy</a></li>
+                        <li>
+                            <a href="contact_us.php" class="text-light ">Contact Us</a>
+                        </li>
+                        <li><a href="tel:9624402490 " class="text-light ">Call
+                                  Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3 ">
+                    <h5>Our Locations</h5>
+                    <p>
+                        <strong>Head Office:</strong><br />AMR Tech Park II, No.25 & 26, Hongasandra, Hosur Main Road, Bangalore – 560 068, India.
+                    </p>
+                    <p>
+                        <strong>Regional Head Office:</strong><br /> C 507-509 Time Sqaure, Harshadrai Mehta Marg, Fatehgunj, Vadodara – Gujarat. <br />
+                        <br />B – 403 Speranza Nr.TGB Circal, LP Savani Road Pal, Surat
+                    </p>
+                    <p>
+                        <strong>Our Branches:</strong><br />Bengaluru,Surat, Delhi, Mumbai, Hyderabad, Kochi, Chandigarh, Chennai.
+                    </p>
+                    <p>
+                        <strong>Upcoming Branches:</strong><br />Rajkot, Raipur, Jaipur, Indore.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-4 ">
+                <small>&copy; 2024 SellerSathi.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function animateCount(elementId, targetCount) {
+            let count = 0;
+            const increment = Math.ceil(targetCount / 100);
+
+            const updateCount = () => {
+                count += increment;
+                if (count > targetCount) {
+                    count = targetCount;
+                }
+                document.getElementById(elementId).innerText = count;
+
+                if (count < targetCount) {
+                    requestAnimationFrame(updateCount);
+                }
+            };
+
+            requestAnimationFrame(updateCount);
+        }
+
+        animateCount("sellersCount", 1000);
+        animateCount("ordersCount", 1000);
+        animateCount("revenueCount", 200);
+        animateCount("brand", 250);
+    </script>
+
+
+
+    <script>
+        const typingElements = document.querySelectorAll('.typing');
+
+        typingElements.forEach(element => {
+            const text = element.getAttribute('data-text'); // Get text from data attribute
+            let index = 0;
+
+            function type() {
+                if (index < text.length) {
+                    element.textContent += text.charAt(index); // Add one character
+                    index++;
+                    setTimeout(type, 100); // Adjust typing speed (in ms)
+                }
+            }
+
+            type(); // Start typing for each element
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+</body>
+
+</html>
+
+</html>

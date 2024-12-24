@@ -1,0 +1,243 @@
+/* General Styles */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: transparent;
+    box-shadow: none;
+}
+
+.navbar-brand .logo {
+    width: 50px;
+    height: auto;
+}
+
+.nav-link {
+    color: black;
+    margin-right: 20px;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/*   <!-- Service Cart --> */
+
+.service-title {
+    text-align: center;
+    margin: 30px;
+    font-weight: 800;
+    font-size: 35px;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(0, 162, 255);
+    /* Text shadow effect */
+}
+
+.ecomm-title {
+    text-align: center;
+    margin: 30px;
+    font-weight: 800;
+    font-size: 35px;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(0, 162, 255);
+    /* Text shadow effect */
+}
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 10px black;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    color: rgb(0, 191, 255);
+}
+
+.card-title {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.card-text {
+    text-align: left;
+}
+
+.dotted-divider {
+    border: none;
+    /* Remove default border */
+    border-top: 2px dotted #ccc;
+    /* Dotted line */
+    margin: 20px auto;
+    /* Center the divider */
+    width: auto;
+    /* Width of the divider */
+}
+
+.card-img-top {
+    height: 200px;
+    /* Set a fixed height for images */
+    object-fit: cover;
+    /* Ensure the image covers the space */
+}
+
+#logo-cart-btn {
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    font-size: 28px;
+}
+
+#logo-cart-btn:hover {
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    color: rgb(129, 170, 184);
+}
+
+@media (max-width: 768px) {
+    .service-title {
+        text-align: center;
+        margin: 20px;
+        font-weight: 800;
+        font-size: 48px;
+    }
+    .card {
+        margin-bottom: 20px;
+        /* Space out cards */
+    }
+    .card-img-top {
+        height: 150px;
+        /* Smaller height for images */
+    }
+}
+
+@media (max-width: 576px) {
+    .card-img-top {
+        height: 120px;
+        /* Further reduce image height */
+    }
+}
+
+.review-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.heading p {
+    font-size: 18px;
+    color: #333;
+}
+
+.heading h2 {
+    font-size: 36px;
+    margin: 10px 0 30px;
+    color: #222;
+    font-weight: 700;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.review-card {
+    background-color: white;
+    border: 2px solid #009879;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.review-card:hover {
+    transform: scale(1.05) rotate(3deg);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.review-card h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.rating span {
+    font-size: 22px;
+    color: #f39c12;
+}
+
+.rating p {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+.review-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.review-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #009879;
+}
+
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-card {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+footer a {
+    text-decoration: none;
+    color: #ff5722;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: none;
+    /* Change to your desired hover color */
+    transform: scale(1.1);
+    /* Slightly enlarges the link */
+    text-shadow: 0 0 5px lightskyblue;
+}
+
+#image-x {
+    border-radius: 30px;
+    box-shadow: 0 0 10px black;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    #image-x {
+        border-radius: 0px;
+        box-shadow: none;
+        margin-top: -1px;
+    }
+}

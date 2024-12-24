@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seller Sathi</title>
+    <link rel="icon" href="images/LOGO-sellersathi.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="about_us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <!-- Updated Navbar with Links -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="box-shadow: 0 0 10px black">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/LOGO-sellersathi.png" alt="Logo" class="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" role="tab" aria-controls="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html" role="tab" aria-controls="nav-profile">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html" role="tab" aria-controls="nav-services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html" role="tab" aria-controls="nav-reviews" disabled>Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.php" role="tab" aria-controls="nav-contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Career.php" role="tab" aria-controls="nav-contact">Career</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Get the current page URL
+        const currentPage = window.location.pathname.split('/').pop();
+
+        // Get all nav links
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        // Loop through links and set active class based on the current page
+        navLinks.forEach(link => {
+            if (link.getAttribute('href') === currentPage) {
+                link.classList.add('active');
+            }
+        });
+    </script>
+
+    <!-- Navbar End -->
+
+    <div class="container-fluid">
+        <h1 class="service-title">ABOUT US</h1>
+
+        <h6 class="know-me">get to know us</h6>
+
+        <h2 class="honesty">Honesty, Integrity & Experience</h2>
+
+        <p class="peragraph">A “marketplace seller service provider” is a pivotal entity within the E-commerce ecosystem, offering comprehensive support and solutions to individuals and businesses looking to thrive in online marketplaces. Let’s delve into what this entails:</p>
+        <p class="peragraph">As a marketplace seller service provider, our mission is to empower businesses and individuals to succeed in the dynamic world of E-commerce. We understand the challenges and complexities of selling on online marketplaces and aim to alleviate
+            those burdens by providing tailored services and expert guidance.
+
+        </p>
+    </div>
+
+    <!---Count start---->
+
+    <div class="container my-5 ">
+        <div class="row text-center ">
+            <div class="col-md-3 ">
+                <div class="stat-card ">
+                    <div style=" display: flex; text-align: center; align-items: center; justify-content: center; ">
+                        <h2 class="stat-number text-blue " id="sellersCount ">0</h2>
+                        <h1 style="font-weight: 600 ">+</h1>
+                    </div>
+                    <p class="stat-label ">Sellers</p>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="stat-card ">
+                    <div style=" display: flex; text-align: center; align-items: center; justify-content: center; ">
+                        <h2 class="stat-number text-red " id="ordersCount ">0</h2>
+                        <h1 style="font-weight: 600 ">+</h1>
+                    </div>
+                    <p class="stat-label ">Catalogs Managed</p>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="stat-card ">
+                    <div style=" display: flex; text-align: center; align-items: center; justify-content: center; ">
+                        <h2 class="stat-number text-green " id="revenueCount ">0</h2>
+                        <h1 style="font-weight: 600 ">+</h1>
+                    </div>
+                    <p class="stat-label ">SKU Listed</p>
+                </div>
+            </div>
+            <div class="col-md-3 ">
+                <div class="stat-card ">
+                    <div style=" display: flex; text-align: center; align-items: center; justify-content: center; ">
+                        <h2 class="stat-number text-pink " id="brand ">0</h2>
+                        <h1 style="font-weight: 600 ">+</h1>
+                    </div>
+                    <p class="stat-label ">Brands Launched</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WHO WE ARE -->
+    <section class="py-5 bg-light ">
+        <div class="container ">
+            <div class="row align-items-center ">
+                <div class="col-md-6 mb-4 ">
+                    <h2 style="font-size: 1.2rem; font-weight: 600; color: purple; ">SELLER SATHI</h2>
+                    <h1 style="font-weight: 800; ">WHO WE ARE</h1>
+                    <p>Seller Sathi is the best E-commerce product cataloging and listing service company in Delhi, Mumbai, and across India helping sellers to sell products online on various marketplaces. Our specialized team of E-commerce cataloging services
+                        will help you to grow online sales.</p>
+                </div>
+                <div class="col-md-6 text-center ">
+                    <img src="images/LOGO-sellersathi.png " alt="Company Logo " class="mb-3 " style="max-height: 100px; ">
+                    <div class="row ">
+                        <div class="col-12 mb-3 ">
+                            <div class="border p-3 ">
+                                <i class="fas fa-check-circle text-success "></i>
+                                <span> By managing your E-commerce product listings, image editing, and product content writing.</span>
+                            </div>
+                        </div>
+                        <div class="col-12 ">
+                            <div class="border p-3 ">
+                                <i class="fas fa-check-circle text-success "></i>
+                                <span> We are an official Seller partner of Flipkart, Amazon, Myntra, Snapdeal, and Ajio.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What are the benefits of Sellersathi? -->
+
+    <div class="container" style="margin-bottom: 30px; color: rgb(71, 49, 132);">
+        <h6 class="benifit-title">What are the benefits of Sellersathi?</h6>
+        <h1 class="benifit">Budget-Friendly and Affordable Pricing</h1>
+        <h2 class="benifit">Ethical and Transparent Dealings</h2>
+        <h3 class="benifit">One-Stop E-commerce Expertise</h3>
+        <h4 class="benifit">Enhanced Client Experience</h4>
+        <h5 class="benifit">Strategic Lead Generation</h5>
+        <h6 class="benifit">Rapid Customer Engagement</h6>
+    </div>
+
+
+    <!-- Footer section -->
+
+    <footer class="bg-dark text-light py-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-3 tex3-center mb-4 ">
+                    <img src="images/LOGO-sellersathi.png " alt="Company Logo " class="mb-3 " style="max-height: 80px " />
+                    <div>
+                        <a href="https://www.facebook.com/dhanji.bharwad.3/ " class="text-light mx-2 "><i
+                                    class="fab fa-facebook-f "></i></a>
+                        <a href="https://www.instagram.com/seller_sathi_vadodara " class="text-light mx-2 "><i
+                                    class="fab fa-instagram "></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 ">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="service.html " class="text-light ">Services</a></li>
+                        <li><a href="reviews.html " class="text-light ">Reviews</a></li>
+                        <li><a href="about_us.html " class="text-light ">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3 ">
+                    <h5><a href="faq.html">FAQs</a></h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="term-condition.html" class="text-light ">Terms and
+                                    Conditions</a></li>
+                        <li><a href="privacy_policy.html " class="text-light ">Privacy
+                                    Policy</a></li>
+                        <li>
+                            <a href="contact_us.php " class="text-light ">Contact Us</a>
+                        </li>
+                        <li><a href="tel:9624402490 " class="text-light ">Call
+                                    Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3 ">
+                    <h5>Our Locations</h5>
+                    <p>
+                        <strong>Head Office:</strong><br />AMR Tech Park II, No.25 & 26, Hongasandra, Hosur Main Road, Bangalore – 560 068, India.
+                    </p>
+                    <p>
+                        <strong>Regional Head Office:</strong><br /> C 507-509 Time Sqaure, Harshadrai Mehta Marg, Fatehgunj, Vadodara – Gujarat. <br />
+                        <br />B – 403 Speranza Nr.TGB Circal, LP Savani Road Pal, Surat
+                    </p>
+                    <p>
+                        <strong>Our Branches:</strong><br />Bengaluru,Surat, Delhi, Mumbai, Hyderabad, Kochi, Chandigarh, Chennai.
+                    </p>
+                    <p>
+                        <strong>Upcoming Branches:</strong><br />Rajkot, Raipur, Jaipur, Indore.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-4 ">
+                <small>&copy; 2024 SellerSathi.</small>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function animateCount(elementId, targetCount) {
+            let count = 0;
+            const increment = Math.ceil(targetCount / 100);
+
+            const updateCount = () => {
+                count += increment;
+                if (count > targetCount) {
+                    count = targetCount;
+                }
+                document.getElementById(elementId).innerText = count;
+
+                if (count < targetCount) {
+                    requestAnimationFrame(updateCount);
+                }
+            };
+
+            requestAnimationFrame(updateCount);
+        }
+
+        animateCount("sellersCount ", 7000);
+        animateCount("ordersCount ", 7000);
+        animateCount("revenueCount ", 350);
+        animateCount("brand ", 250);
+    </script>
+
+    <script>
+        document.addEventListener("scroll", function() {
+            const benefits = document.querySelectorAll('.benifit');
+            const scrollPosition = window.scrollY + window.innerHeight;
+
+            benefits.forEach((benefit, index) => {
+                const benefitPosition = benefit.getBoundingClientRect().top + window.scrollY;
+
+                if (scrollPosition > benefitPosition + 100) { // Adjust 100 as needed
+                    benefit.style.opacity = 1; // Make it visible
+                    benefit.style.transform = 'translateY(0)'; // Move back to original position
+                }
+            });
+        });
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+
+</html>

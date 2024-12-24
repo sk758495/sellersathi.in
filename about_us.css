@@ -1,0 +1,248 @@
+/* General Styles */
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+    background: transparent;
+    box-shadow: none;
+}
+
+.navbar-brand .logo {
+    width: 50px;
+    height: auto;
+}
+
+.nav-link {
+    color: black;
+    margin-right: 20px;
+}
+
+.sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/*   <!-- Service Cart --> */
+
+.container-fluid {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 950px;
+}
+
+.service-title {
+    text-align: center;
+    margin: 30px;
+    font-weight: 800;
+    font-size: 58px;
+    text-shadow: 2px 12px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(0, 162, 255);
+    /* Text shadow effect */
+}
+
+.know-me {
+    text-align: center;
+    margin: 30px;
+    font-weight: 800;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    /* Text shadow effect */
+}
+
+.honesty {
+    font-size: 36px;
+    margin: 10px 0 30px;
+    color: #222;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.peragraph {
+    font-size: 18px;
+    margin: 10px 0 30px;
+    color: #222;
+    font-weight: 400;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+@media (max-width: 768px) {
+    .container-fluid {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: auto;
+    }
+    .peragraph {
+        font-size: 16px;
+        margin: 10px 0 30px;
+        color: #222;
+        font-weight: 400;
+        text-align: center;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+}
+
+
+/* Counter */
+
+.text-blue {
+    color: blue;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-pink {
+    color: rgb(250, 5, 213);
+}
+
+.stat-card {
+    padding: 20px;
+    /* Add some padding to the card */
+    border: 1px solid #ccc;
+    /* Optional: add border */
+    border-radius: 5px;
+    /* Optional: rounded corners */
+    background-color: #f9f9f9;
+    /* Optional: background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Optional: shadow */
+    margin: 10px;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    /* Larger font size for numbers */
+    font-family: 'Arial', sans-serif;
+    /* Font family */
+    font-weight: 700;
+    /* Bold font weight */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.stat-label {
+    font-size: 1.2rem;
+    /* Smaller font size for labels */
+    font-family: 'Verdana', sans-serif;
+    /* Font family */
+    color: #555;
+    /* Darker color for better readability */
+    margin-top: 10px;
+    /* Space between number and label */
+}
+
+
+/* Who We Are */
+
+section .border {
+    border: 1px solid #dee2e6;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    box-shadow: 0 0 3px black;
+}
+
+
+/* hat are the benefits of Sellersathi? */
+
+.benifit {
+    margin: 10px 0 30px;
+    color: #222;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    /* Initially hidden */
+    transform: translateY(20px);
+    /* Slightly move down */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    /* Smooth transition */
+}
+
+.benifit-title {
+    text-align: left;
+    margin: 30px;
+    font-weight: 700;
+    text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+    .benifit-title {
+        font-size: 1.5em;
+        /* Adjust font size for smaller screens */
+        margin: 20px;
+        /* Reduced margin */
+        font-weight: 700;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    }
+    .benifit {
+        font-size: 1.2em;
+        /* Smaller font size for benefits */
+        margin: 5px 0;
+        /* Reduce margin */
+        text-shadow: none;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .benifit-title {
+        font-size: 1.2em;
+        /* Further adjust for very small screens */
+        margin: 15px;
+        /* Further reduced margin */
+        font-weight: 700;
+        text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.5);
+    }
+    .benifit {
+        font-size: 1em;
+        /* Even smaller font size */
+        margin: 3px 0;
+        /* Further reduced margin */
+        text-shadow: none;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 20px;
+    }
+}
+
+footer a {
+    text-decoration: none;
+    color: #ff5722;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    text-decoration: none;
+    /* Change to your desired hover color */
+    transform: scale(1.1);
+    /* Slightly enlarges the link */
+    text-shadow: 0 0 5px lightskyblue;
+}

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seller Sathi</title>
+    <link rel="icon" href="images/LOGO-sellersathi.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="faq.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <!-- Updated Navbar with Links -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" style="box-shadow: 0 0 10px black">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/LOGO-sellersathi.png" alt="Logo" class="logo" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" role="tab" aria-controls="nav-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about_us.html" role="tab" aria-controls="nav-profile">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="service.html" role="tab" aria-controls="nav-services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html" role="tab" aria-controls="nav-reviews" disabled>Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact_us.php" role="tab" aria-controls="nav-contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Career.php" role="tab" aria-controls="nav-contact">Career</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        // Get the current page URL
+        const currentPage = window.location.pathname.split("/").pop();
+
+        // Get all nav links
+        const navLinks = document.querySelectorAll(".nav-link");
+
+        // Loop through links and set active class based on the current page
+        navLinks.forEach((link) => {
+            if (link.getAttribute("href") === currentPage) {
+                link.classList.add("active");
+            }
+        });
+    </script>
+
+    <!-- Navbar End -->
+
+    <!-- Review section -->
+
+    <section>
+        <h1 class="review-title">Frequenty Asked Questions</h1>
+
+        <div class="container my-4">
+
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                1. How Can I Grow my Ecommerce business?
+                            </button>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            It’s easy to start an ecommerce business but hard to succeed due to the fierce competition on platforms like Amazon and Flipkart. You need knowledge in optimizing product listings, inventory management, and ecommerce marketing to stay ahead.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2. What strategies can I use to improve my online sales?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Seller Seva gives you hand holding support and work with you as your ecommerce partner where we will build your Brand to make you stand out from the competition and by our 10 Years of Ecommerce Marketing expertise we will drive customers to your online
+                            store and increase your sales. You can BOOK FREE CONSULTATION with us.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingthree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
+                                3. What are advantages of Ecommerce?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTree" class="collapse" aria-labelledby="headingthree" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            <h2>Advantages of eCommerce</h2>
+                            <ul class="list-group">
+                                <li class="list-group-item">Option to choose from a vast variety of products for customers at their fingertips.</li>
+                                <li class="list-group-item">24/7 Business Operations.</li>
+                                <li class="list-group-item">Global Customer Reach.</li>
+                                <li class="list-group-item">Low operational costs.</li>
+                                <li class="list-group-item">Easy to start and manage a business.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingfour">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                4. Why Ecommerce is Future?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapsefour" class="collapse" aria-labelledby="headingfour" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            The Indian E-commerce market is expected to grow to US$ 200 billion by 2026 from US$ 38.5 billion as of 2017. Covid-19 Lockdown also pushed traditional sellers to join Ecommerce due to social distancing policies of WHO across globe which made Ecommerce
+                            the only option to grow business in Corona crisis.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                5. Can I customize my product listings for each marketplace?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, our platform allows you to tailor your listings to fit the specific requirements and audience of each marketplace.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                6. How do you optimize my listings for better search results?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            We use industry best practices to optimize your listings with relevant keywords and product descriptions, helping you improve your ranking in marketplace search results.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingSeven">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                7. Is there a monthly fee for your service?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, we offer tiered pricing plans to suit different business needs. Contact us to discuss your specific requirements and get a free quote.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header" id="headingEight">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                8. What marketplaces do you integrate with?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            We integrate with a wide range of popular marketplaces, including Amazon, FLipkart, Snapdeal, Limeroad, Tatacliq, etc. We’re constantly expanding our integrations, so be sure to check with us for the latest additions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Reviews section End -->
+
+    <!-- Footer section -->
+
+    <footer class="bg-dark text-light py-5 ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-3 tex3-center mb-4 ">
+                    <img src="images/LOGO-sellersathi.png " alt="Company Logo " class="mb-3 " style="max-height: 80px " />
+                    <div>
+                        <a href="https://www.facebook.com/dhanji.bharwad.3/ " class="text-light mx-2 "><i
+                                  class="fab fa-facebook-f "></i></a>
+                        <a href="https://www.instagram.com/seller_sathi_vadodara " class="text-light mx-2 "><i
+                                  class="fab fa-instagram "></i></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-3 ">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="service.html " class="text-light ">Services</a></li>
+                        <li><a href="reviews.html " class="text-light ">Reviews</a></li>
+                        <li><a href="about_us.html " class="text-light ">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3 ">
+                    <h5><a href="faq.html">FAQs</a></h5>
+                    <ul class="list-unstyled ">
+                        <li><a href="term-condition.html" class="text-light ">Terms and
+                                  Conditions</a></li>
+                        <li><a href="privacy_policy.html " class="text-light ">Privacy
+                                  Policy</a></li>
+                        <li>
+                            <a href="contact_us.php " class="text-light ">Contact Us</a>
+                        </li>
+                        <li><a href="tel:9624402490 " class="text-light ">Call
+                                  Me</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3 ">
+                    <h5>Our Locations</h5>
+                    <p>
+                        <strong>Head Office:</strong><br />AMR Tech Park II, No.25 & 26, Hongasandra, Hosur Main Road, Bangalore – 560 068, India.
+                    </p>
+                    <p>
+                        <strong>Regional Head Office:</strong><br /> C 507-509 Time Sqaure, Harshadrai Mehta Marg, Fatehgunj, Vadodara – Gujarat. <br />
+                        <br />B – 403 Speranza Nr.TGB Circal, LP Savani Road Pal, Surat
+                    </p>
+                    <p>
+                        <strong>Our Branches:</strong><br />Bengaluru,Surat, Delhi, Mumbai, Hyderabad, Kochi, Chandigarh, Chennai.
+                    </p>
+                    <p>
+                        <strong>Upcoming Branches:</strong><br />Rajkot, Raipur, Jaipur, Indore.
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-4 ">
+                <small>&copy; 2024 SellerSathi.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function animateCount(elementId, targetCount) {
+            let count = 0;
+            const increment = Math.ceil(targetCount / 100);
+
+            const updateCount = () => {
+                count += increment;
+                if (count > targetCount) {
+                    count = targetCount;
+                }
+                document.getElementById(elementId).innerText = count;
+
+                if (count < targetCount) {
+                    requestAnimationFrame(updateCount);
+                }
+            };
+
+            requestAnimationFrame(updateCount);
+        }
+
+        animateCount("sellersCount", 1000);
+        animateCount("ordersCount", 1000);
+        animateCount("revenueCount", 200);
+        animateCount("brand", 250);
+    </script>
+
+
+
+    <script>
+        const typingElements = document.querySelectorAll('.typing');
+
+        typingElements.forEach(element => {
+            const text = element.getAttribute('data-text'); // Get text from data attribute
+            let index = 0;
+
+            function type() {
+                if (index < text.length) {
+                    element.textContent += text.charAt(index); // Add one character
+                    index++;
+                    setTimeout(type, 100); // Adjust typing speed (in ms)
+                }
+            }
+
+            type(); // Start typing for each element
+        });
+    </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+</body>
+
+</html>
+
+</html>
